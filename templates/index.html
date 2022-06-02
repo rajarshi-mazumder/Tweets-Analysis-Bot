@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/result" method="POST">
+
+        <label for="Name">Enter username:</label>
+        <input type="text" name="name" id="name">
+
+        <input type="number" name="no_of_tweets">
+        <input type="submit" name="submit">
+
+        <center>
+        {%if name%}
+            <h3>The username is {{name}}</h3>
+            <h4>The No of Tweets to analyze is {{no_of_tweets}}</h4>
+            <center>
+                <img src="D:/Python_Course/Twitter_Project/templates/Messi.png" alt="Image Missing"></img>
+            </center>
+        {%endif%}
+         </center>
+    </form>
+</body>
+</html>
